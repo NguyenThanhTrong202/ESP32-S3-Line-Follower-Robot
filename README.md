@@ -1,4 +1,3 @@
-<img width="2752" height="1536" alt="Untitled" src="https://github.com/user-attachments/assets/41512163-9117-4e46-827d-5ec8a72c43f8" />
 
 # ESP32-S3 Smart Line-Following Robot
 
@@ -8,9 +7,11 @@ An embedded robotics project developed using ESP32-S3, featuring an 8-channel an
 
 This project focuses on developing an autonomous line-following robot capable of navigating different track patterns using an 8-channel analog sensor array.
 
-The ESP32-S3 processes sensor readings, detects the line position, and controls two DC motors through the TB6612FNG motor driver.
+The ESP32-S3 processes sensor readings, detects the line position, and controls two DC motors through the TB6612FNG motor driver using PID control.
 
 The project is developed to explore embedded firmware, sensor acquisition, motor control, hardware integration, and real-world debugging.
+
+<img width="2752" height="1536" alt="Untitled" src="https://github.com/user-attachments/assets/41512163-9117-4e46-827d-5ec8a72c43f8" />
 
 ## Hardware Components
 
