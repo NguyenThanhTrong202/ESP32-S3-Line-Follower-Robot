@@ -13,15 +13,71 @@ The project is developed to explore embedded firmware, sensor acquisition, motor
 
 <img width="2752" height="1536" alt="Untitled" src="https://github.com/user-attachments/assets/41512163-9117-4e46-827d-5ec8a72c43f8" />
 
-## Hardware Components
+## Hardware Configuration
+
+### Hardware Components
 
 | Component | Description |
 |---|---|
 | ESP32-S3-WROOM-1 N16R8 | Main microcontroller |
-| QTR-8A | 8-channel analog line sensor |
+| QTR-8A | 8-channel analog reflectance sensor array for line detection |
 | TB6612FNG | Dual DC motor driver |
+| HC-SR04 | Ultrasonic distance sensor for obstacle detection |
 | DC Motors | Differential drive system |
-| HC-SR04 | Ultrasonic obstacle detection |
+
+### Pin Mapping
+
+#### 1. QTR-8A Line Sensor
+
+The QTR-8A sensor array provides 8 analog channels for detecting line position and tracking the path.
+
+| QTR-8A Pin | ESP32-S3 GPIO |
+|---|---:|
+| D1 | GPIO 18 |
+| D2 | GPIO 17 |
+| D3 | GPIO 16 |
+| D4 | GPIO 15 |
+| D5 | GPIO 7 |
+| D6 | GPIO 6 |
+| D7 | GPIO 5 |
+| D8 | GPIO 4 |
+| VCC | 3.3V |
+| GND | GND |
+
+#### 2. HC-SR04 Ultrasonic Sensor
+
+The HC-SR04 is used to measure the distance between the robot and obstacles.
+
+| HC-SR04 Pin | ESP32-S3 GPIO |
+|---|---:|
+| TRIG | GPIO 41 |
+| ECHO | GPIO 40 |
+| VCC | 5V |
+| GND | GND |
+
+> **Note:** The HC-SR04 ECHO pin outputs a 5V signal. A voltage divider or logic-level converter should be used to protect the ESP32-S3 GPIO from 5V.
+
+#### 3. TB6612FNG Motor Driver
+
+The TB6612FNG controls the direction and speed of the two DC motors using GPIO signals and PWM.
+
+| TB6612FNG Pin | ESP32-S3 GPIO | Function |
+|---|---:|---|
+| PWMA | GPIO 13 | Motor A speed control (PWM) |
+| AI2 | GPIO 12 | Motor A direction |
+| AI1 | GPIO 11 | Motor A direction |
+| STBY | GPIO 10 | Driver standby control |
+| BIN1 | GPIO 9 | Motor B direction |
+| BIN2 | GPIO 46 | Motor B direction |
+| PWMB | GPIO 3 | Motor B speed control (PWM) |
+
+### System Hardware Overview
+
+- **Line Detection:** QTR-8A analog sensor array
+- **Motor Control:** TB6612FNG dual motor driver
+- **Obstacle Detection:** HC-SR04 ultrasonic sensor
+- **Main Controller:** ESP32-S3-WROOM-1 N16R8
+- **Drive System:** Two DC motors
 
 ## System Features
 
