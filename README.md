@@ -1,3 +1,4 @@
+<img width="2752" height="1536" alt="Untitled" src="https://github.com/user-attachments/assets/41512163-9117-4e46-827d-5ec8a72c43f8" />
 
 # ESP32-S3 Smart Line-Following Robot
 
