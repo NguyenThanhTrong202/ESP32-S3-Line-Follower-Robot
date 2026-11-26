@@ -139,8 +139,9 @@ C/C++, ESP32-S3, GPIO, ADC, PWM, Embedded Systems, Sensor Interfacing, Motor Con
 
 ## Project Status
 
-Currently under development. Firmware and navigation behavior are being continuously tested and improved on the physical robot.
+This project has been completed and archived. No further development is planned.
 
+Project Achievement: Top 15 / 54 teams
 ## Author
 
 Nguyễn Thành Trọng
