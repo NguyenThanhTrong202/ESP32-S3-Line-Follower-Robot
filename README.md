@@ -137,11 +137,15 @@ These values are preliminary and depend on sensor conditions, lighting, and cali
 
 C/C++, ESP32-S3, GPIO, ADC, PWM, Embedded Systems, Sensor Interfacing, Motor Control, Firmware Debugging
 
+### F-MAZE-SOLVING
+**F-Chip Club – FPT University**
+
+- **Achievement:** Top 15 / 54 teams
+- **Project:** ESP32-S3 Autonomous Line-Following Robot
+
 ## Project Status
 
-This project has been completed and archived. No further development is planned.
-
-Project Achievement: Top 15 / 54 teams
+Completed and archived. No further development is planned.
 ## Author
 
 Nguyễn Thành Trọng
